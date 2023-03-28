@@ -1,0 +1,8 @@
+[package]
+name = "llm-backend"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1", default-features = false, features = ["rt", "rt-multi-thread", "sync" ] }
+llama-rs = { path = "../llama-rs/llama-rs" }
